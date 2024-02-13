@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
         }
         .container {
             margin-top: 100px;
@@ -20,23 +22,33 @@
             color: #333;
             font-size: 18px;
         }
+        .buttons {
+            margin-top: 20px;
+        }
         button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #e60000;
-            color: #fff;
             border: none;
             cursor: pointer;
             border-radius: 5px;
+        }
+        #no-btn:hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Will You Be My Valentine?</h1>
-        <p>Dear [Maham],</p>
+        <p>Dear [Girlfriend's Name],</p>
         <p>On this special day, I want to express my love for you. You mean everything to me, and I can't imagine my life without you. Will you be my Valentine?</p>
-        <button onclick="window.location.href='mailto:heremail@example.com?subject=Yes, I'll be your Valentine!&body=Yes, I'd love to be your Valentine! Love, [Your Zuu]'">Yes, I'd love to!</button>
+        <div class="buttons">
+            <button id="yes-btn" onclick="window.location.href='mailto:heremail@example.com?subject=Yes, I'll be your Valentine!&body=Yes, I'd love to be your Valentine! Love, [Your Name]'">Yes, I'd love to!</button>
+            <button id="no-btn">No, thank you</button>
+        </div>
     </div>
 </body>
 </html>
