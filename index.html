@@ -43,12 +43,19 @@
 <body>
     <div class="container">
         <h1>Will You Be My Valentine?</h1>
-        <p>Dear Maham ,</p>
-        <p> Will you be my Valentine?</p>
+        <p>Dear Maham,</p>
+        <p>You mean the world to me, and I can't imagine my life without you. Will you be my Valentine?</p>
         <div class="buttons">
-            <button id="yes-btn" onclick="window.location.href='mailto:rameez26899@gmail.com?subject=Yes, I'll be your Valentine!&body=Yes, I'd love to be your Valentine! Love, Zuu'">Yes, I'd love to!</button>
+            <button id="yes-btn">Yes, I'd love to!</button>
             <button id="no-btn">No, thank you</button>
         </div>
+        <p id="confirmation" style="display: none;">Thank you Zuu ki Jaan! I love you.</p>
     </div>
+
+    <script>
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            document.getElementById("confirmation").style.display = "block";
+        });
+    </script>
 </body>
 </html>
